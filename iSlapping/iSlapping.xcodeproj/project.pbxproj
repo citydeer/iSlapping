@@ -281,6 +281,8 @@
 		F20AA7A11796F5CA00AC103F /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F20AA7A01796F5CA00AC103F /* AppDelegate.cpp */; };
 		F20AA7A41796F5CA00AC103F /* HelloWorldScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F20AA7A31796F5CA00AC103F /* HelloWorldScene.cpp */; };
 		F20AA7AB1796F6D200AC103F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F20AA7AA1796F6D200AC103F /* Default-568h@2x.png */; };
+		F20AA7B01796FDA400AC103F /* Assets in Resources */ = {isa = PBXBuildFile; fileRef = F20AA7AE1796FDA400AC103F /* Assets */; };
+		F20AA7B11796FDA400AC103F /* Images in Resources */ = {isa = PBXBuildFile; fileRef = F20AA7AF1796FDA400AC103F /* Images */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -875,6 +877,8 @@
 		F20AA7A21796F5CA00AC103F /* HelloWorldScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = HelloWorldScene.h; path = Classes/HelloWorldScene.h; sourceTree = "<group>"; };
 		F20AA7A31796F5CA00AC103F /* HelloWorldScene.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = HelloWorldScene.cpp; path = Classes/HelloWorldScene.cpp; sourceTree = "<group>"; };
 		F20AA7AA1796F6D200AC103F /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
+		F20AA7AE1796FDA400AC103F /* Assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Assets; sourceTree = "<group>"; };
+		F20AA7AF1796FDA400AC103F /* Images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Images; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -934,6 +938,8 @@
 		F20AA40D1796F5C300AC103F /* iSlapping */ = {
 			isa = PBXGroup;
 			children = (
+				F20AA7AE1796FDA400AC103F /* Assets */,
+				F20AA7AF1796FDA400AC103F /* Images */,
 				F20AA40E1796F5C300AC103F /* Resources */,
 				F20AA4261796F5C300AC103F /* ios */,
 				F20AA42F1796F5C300AC103F /* libs */,
@@ -2168,6 +2174,8 @@
 				F20AA4C31796F5C400AC103F /* ChangeLog in Resources */,
 				F20AA6371796F5C700AC103F /* project.pbxproj in Resources */,
 				F20AA7AB1796F6D200AC103F /* Default-568h@2x.png in Resources */,
+				F20AA7B01796FDA400AC103F /* Assets in Resources */,
+				F20AA7B11796FDA400AC103F /* Images in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2570,6 +2578,7 @@
 				F20AA7A91796F5CA00AC103F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
