@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5495F5D41797CE690042BCC4 /* StartScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5495F5D21797CE690042BCC4 /* StartScene.cpp */; };
+		5495F5D71797CE950042BCC4 /* GameScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5495F5D51797CE950042BCC4 /* GameScene.cpp */; };
 		F20AA3FE1796F5C300AC103F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F20AA3FD1796F5C300AC103F /* QuartzCore.framework */; };
 		F20AA4001796F5C300AC103F /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F20AA3FF1796F5C300AC103F /* OpenGLES.framework */; };
 		F20AA4021796F5C300AC103F /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F20AA4011796F5C300AC103F /* OpenAL.framework */; };
@@ -286,6 +288,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5495F5D21797CE690042BCC4 /* StartScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StartScene.cpp; sourceTree = "<group>"; };
+		5495F5D31797CE690042BCC4 /* StartScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartScene.h; sourceTree = "<group>"; };
+		5495F5D51797CE950042BCC4 /* GameScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameScene.cpp; sourceTree = "<group>"; };
+		5495F5D61797CE950042BCC4 /* GameScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameScene.h; sourceTree = "<group>"; };
 		F20AA3FA1796F5C300AC103F /* iSlapping.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iSlapping.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F20AA3FD1796F5C300AC103F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		F20AA3FF1796F5C300AC103F /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -872,10 +878,10 @@
 		F20AA7981796F5CA00AC103F /* libwebsockets.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = libwebsockets.h; path = libs/libwebsockets/ios/include/libwebsockets.h; sourceTree = "<group>"; };
 		F20AA79A1796F5CA00AC103F /* libwebsockets.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libwebsockets.a; path = libs/libwebsockets/ios/lib/libwebsockets.a; sourceTree = "<group>"; };
 		F20AA79D1796F5CA00AC103F /* Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
-		F20AA79F1796F5CA00AC103F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Classes/AppDelegate.h; sourceTree = "<group>"; };
-		F20AA7A01796F5CA00AC103F /* AppDelegate.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = AppDelegate.cpp; path = Classes/AppDelegate.cpp; sourceTree = "<group>"; };
-		F20AA7A21796F5CA00AC103F /* HelloWorldScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = HelloWorldScene.h; path = Classes/HelloWorldScene.h; sourceTree = "<group>"; };
-		F20AA7A31796F5CA00AC103F /* HelloWorldScene.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = HelloWorldScene.cpp; path = Classes/HelloWorldScene.cpp; sourceTree = "<group>"; };
+		F20AA79F1796F5CA00AC103F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F20AA7A01796F5CA00AC103F /* AppDelegate.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AppDelegate.cpp; sourceTree = "<group>"; };
+		F20AA7A21796F5CA00AC103F /* HelloWorldScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HelloWorldScene.h; sourceTree = "<group>"; };
+		F20AA7A31796F5CA00AC103F /* HelloWorldScene.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = HelloWorldScene.cpp; sourceTree = "<group>"; };
 		F20AA7AA1796F6D200AC103F /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
 		F20AA7AE1796FDA400AC103F /* Assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Assets; sourceTree = "<group>"; };
 		F20AA7AF1796FDA400AC103F /* Images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Images; sourceTree = "<group>"; };
@@ -2106,8 +2112,12 @@
 				F20AA7A01796F5CA00AC103F /* AppDelegate.cpp */,
 				F20AA7A21796F5CA00AC103F /* HelloWorldScene.h */,
 				F20AA7A31796F5CA00AC103F /* HelloWorldScene.cpp */,
+				5495F5D31797CE690042BCC4 /* StartScene.h */,
+				5495F5D21797CE690042BCC4 /* StartScene.cpp */,
+				5495F5D61797CE950042BCC4 /* GameScene.h */,
+				5495F5D51797CE950042BCC4 /* GameScene.cpp */,
 			);
-			name = Classes;
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -2435,6 +2445,8 @@
 				F20AA7931796F5CA00AC103F /* cpVect.c in Sources */,
 				F20AA7A11796F5CA00AC103F /* AppDelegate.cpp in Sources */,
 				F20AA7A41796F5CA00AC103F /* HelloWorldScene.cpp in Sources */,
+				5495F5D41797CE690042BCC4 /* StartScene.cpp in Sources */,
+				5495F5D71797CE950042BCC4 /* GameScene.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
