@@ -9,8 +9,8 @@
 @class RootViewController;
 
 @interface AppController : NSObject <UIAccelerometerDelegate, UIAlertViewDelegate, UITextFieldDelegate,UIApplicationDelegate> {
-    UIWindow *window;
-    RootViewController    *viewController;
+	UIWindow *window;
+	RootViewController	*viewController;
 }
 
 @property (nonatomic, retain) UIWindow *window;

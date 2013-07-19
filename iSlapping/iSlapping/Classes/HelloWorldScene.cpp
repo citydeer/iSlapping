@@ -55,6 +55,11 @@ bool HelloWorld::init()
 
     // ask director the window size
     CCSize size = CCDirector::sharedDirector()->getWinSize();
+	
+	CCPoint visibleOrigin = CCDirector::sharedDirector()->getVisibleOrigin();
+	CCSize visibleSize = CCDirector::sharedDirector()->getVisibleSize();
+	
+	printf("Win size:(%f, %f); Visible rect:(%f, %f, %f, %f)\n", size.width, size.height, visibleOrigin.x, visibleOrigin.y, visibleSize.width, visibleSize.height);
 
     // position the label on the center of the screen
     pLabel->setPosition( ccp(size.width / 2, size.height - 20) );
