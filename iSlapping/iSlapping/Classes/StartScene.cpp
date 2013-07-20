@@ -31,12 +31,9 @@ bool StartScene::init()
 	CCMenuItemFont::setFontName("Arial");
 	CCMenuItemFont::setFontSize(25);
 	
-	CCMenuItemFont* startMi = CCMenuItemFont::create("Start", this, menu_selector(StartScene::menuItemCallback));
-	startMi->setTag(0);
-	CCMenuItemFont* optionMi = CCMenuItemFont::create("Option", this, menu_selector(StartScene::menuItemCallback));
-	optionMi->setTag(1);
-	CCMenuItemFont* helpMi = CCMenuItemFont::create("Help", this, menu_selector(StartScene::menuItemCallback));
-	helpMi->setTag(2);
+	CCMenuItemFont* startMi = CCMenuItemFont::create("Start", this, menu_selector(StartScene::onStart));
+	CCMenuItemFont* optionMi = CCMenuItemFont::create("Option", this, menu_selector(StartScene::onOption));
+	CCMenuItemFont* helpMi = CCMenuItemFont::create("Help", this, menu_selector(StartScene::onHelp));
 	
 	CCMenu* pMenu = CCMenu::create(startMi, optionMi, helpMi);
 	pMenu->alignItemsVertically();
@@ -46,11 +43,20 @@ bool StartScene::init()
 }
 
 
-void StartScene::menuItemCallback(CCObject* pSender)
+void StartScene::onStart(CCObject* pSender)
 {
-	CCNode* pItem = dynamic_cast<CCNode*>(pSender);
-	int tag = (pItem ? pItem->getTag() : -1);
-	printf("Tap menu: %d\n", tag);
+	printf("Start\n");
 }
+
+void StartScene::onOption(CCObject* pSender)
+{
+	printf("Option\n");
+}
+
+void StartScene::onHelp(CCObject* pSender)
+{
+	printf("Help\n");
+}
+
 
 

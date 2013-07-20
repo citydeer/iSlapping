@@ -28,29 +28,25 @@ AppDelegate::~AppDelegate()
 bool AppDelegate::applicationDidFinishLaunching()
 {
 	// initialize director
-	CCDirector *pDirector = CCDirector::sharedDirector();
+	CCDirector* pDirector = CCDirector::sharedDirector();
 	CCEGLView* pEGLView = CCEGLView::sharedOpenGLView();
 	
 	pDirector->setOpenGLView(pEGLView);
 	
-	pEGLView->setDesignResolutionSize(480, 320, kResolutionNoBorder);
-	CCSize fs = pEGLView->getFrameSize();
+	pEGLView->setDesignResolutionSize(480, 320, kResolutionFixedHeight);
+	CCSize frameSize = pEGLView->getFrameSize();
 	
-	printf("%f, %f\n", fs.width, fs.height);
-	
-	pDirector->setContentScaleFactor(fs.height/320);
+	pDirector->setContentScaleFactor(frameSize.height/320);
 
 	// turn on display FPS
 	pDirector->setDisplayStats(true);
 
 	// set FPS. the default value is 1.0/60 if you don't call this
 	pDirector->setAnimationInterval(1.0 / 60);
-	
-//	pDirector->setContentScaleFactor(2.0);
 
 	// create a scene. it's an autorelease object
-	CCScene *pScene = HelloWorld::scene();
-//	CCScene *pScene = StartScene::scene();
+//	CCScene *pScene = HelloWorld::scene();
+	CCScene *pScene = StartScene::scene();
 
 	// run
 	pDirector->runWithScene(pScene);

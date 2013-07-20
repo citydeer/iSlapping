@@ -19,7 +19,9 @@ public:
 	
 	virtual bool init();
 	
-	void menuItemCallback(CCObject* pSender);
+	void onStart(CCObject* pSender);
+	void onOption(CCObject* pSender);
+	void onHelp(CCObject* pSender);
 	
 	CREATE_FUNC(StartScene);
 };
