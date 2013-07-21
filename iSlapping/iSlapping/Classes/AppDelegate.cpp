@@ -27,6 +27,11 @@ AppDelegate::~AppDelegate()
 
 bool AppDelegate::applicationDidFinishLaunching()
 {
+	std::vector<std::string> searchPaths;
+	searchPaths.push_back("Images/");
+	searchPaths.push_back("Assets/");
+	CCFileUtils::sharedFileUtils()->setSearchPaths(searchPaths);
+	
 	// initialize director
 	CCDirector* pDirector = CCDirector::sharedDirector();
 	CCEGLView* pEGLView = CCEGLView::sharedOpenGLView();
@@ -36,7 +41,7 @@ bool AppDelegate::applicationDidFinishLaunching()
 	pEGLView->setDesignResolutionSize(480, 320, kResolutionFixedHeight);
 	CCSize frameSize = pEGLView->getFrameSize();
 	
-	pDirector->setContentScaleFactor(frameSize.height/320);
+//	pDirector->setContentScaleFactor(frameSize.height/320);
 
 	// turn on display FPS
 	pDirector->setDisplayStats(true);
@@ -51,7 +56,7 @@ bool AppDelegate::applicationDidFinishLaunching()
 	// run
 	pDirector->runWithScene(pScene);
 	
-	SimpleAudioEngine::sharedEngine();
+	SimpleAudioEngine::sharedEngine()->preloadEffect("slap.wav");
 
 	return true;
 }

@@ -7,6 +7,7 @@
 //
 
 #include "StartScene.h"
+#include "GameScene.h"
 
 using namespace cocos2d;
 
@@ -35,7 +36,7 @@ bool StartScene::init()
 	CCMenuItemFont* optionMi = CCMenuItemFont::create("Option", this, menu_selector(StartScene::onOption));
 	CCMenuItemFont* helpMi = CCMenuItemFont::create("Help", this, menu_selector(StartScene::onHelp));
 	
-	CCMenu* pMenu = CCMenu::create(startMi, optionMi, helpMi);
+	CCMenu* pMenu = CCMenu::create(startMi, optionMi, helpMi, NULL);
 	pMenu->alignItemsVertically();
 	this->addChild(pMenu);
 	
@@ -45,7 +46,7 @@ bool StartScene::init()
 
 void StartScene::onStart(CCObject* pSender)
 {
-	printf("Start\n");
+	CCDirector::sharedDirector()->replaceScene(GameScene::scene());
 }
 
 void StartScene::onOption(CCObject* pSender)
