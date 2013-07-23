@@ -168,7 +168,7 @@ bool GameOverScene::init()
 	CCSize ws = CCDirector::sharedDirector()->getWinSize();
 	
 	CCLayerColor* bg = CCLayerColor::create(ccc4(0, 0, 0, 128), 300, 200);
-	bg->setAnchorPoint(ccp(1, 1));
+	bg->ignoreAnchorPointForPosition(false);
 	bg->setPosition(ccp(ws.width/2, ws.height/2));
 	this->addChild(bg, 0);
 	
